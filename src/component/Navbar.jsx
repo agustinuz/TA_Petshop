@@ -9,7 +9,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-2 py-lg-0 px-3 px-lg-0">
+      <nav className="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-2 py-lg-0 px-3 px-lg-0 sticky-top">
         <Link href="/" className="navbar-brand ms-lg-5">
           <h1 className="m-0 text-uppercase text-primary">
             <i class="fi fi-bs-store-alt fs-1  me-1"></i> Pet Shop
@@ -31,9 +31,10 @@ const Navbar = () => {
             <Link to="/aboutUs" className="nav-item nav-link">
               About
             </Link>
-            <Link href="service.html" className="nav-item nav-link">
+            <a href="#service" className="nav-item nav-link">
+              {" "}
               Service
-            </Link>
+            </a>
             <Link to="/product" className="nav-item nav-link">
               Product
             </Link>
@@ -60,12 +61,12 @@ const Navbar = () => {
                 kasd. Kasd clita ea justo est sed kasd erat clita sea
               </p>
               <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                <a
-                  href=""
+                <Link
+                  to="/login"
                   class="btn btn-outline-light border-2 py-md-3 px-md-5 me-5"
                 >
                   Shop Now!!
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,7 +75,7 @@ const Navbar = () => {
       {/* Hero End */}
 
       {/* Service start */}
-      <div class="container-fluid py-5">
+      <div class="container-fluid py-5" id="service">
         <div class="container">
           <div
             class="border-start border-5 border-primary ps-5 mb-5"

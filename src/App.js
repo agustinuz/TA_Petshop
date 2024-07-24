@@ -5,6 +5,8 @@ import "@flaticon/flaticon-uicons/css/all/all.css";
 import Navbar from "./component/Navbar";
 import AboutUs from "./component/aboutUs";
 import Product from "./component/product";
+import Login from "./Dashboard/Login";
+import Register from "./Dashboard/Register";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
           <Route exact path="/" element={<Navbar />} />
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </Router>
